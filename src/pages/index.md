@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Welcome to Cibirix
-image: /img/home-jumbotron.jpg
+image: /img/image002.png
 heading: Great coffee with a conscience
 subheading: Hello to All
 mainpitch:
