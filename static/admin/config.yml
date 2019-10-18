@@ -61,9 +61,10 @@ collections:
 
   - name: "menu"
     label: "Menus"
-    # folder: "src/pages/blog"
+    # folder: "src/pages/menu"
     # create: true
     # slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    file: "src/pages/menus/menu.md"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
