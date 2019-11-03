@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Carport Template`,
+    description: `Developing Carports Template in Gatsby`,
+    author: `Harsh`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -38,6 +38,9 @@ module.exports = {
         url:
           "https://api-uswest.graphcms.com/v1/ck2hhzcov1m1901gq4kl1a6qg/master",
       },
+    },
+    {
+      resolve: "gatsby-plugin-sass",
     },
 
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -9,10 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+// import Header from "./header"
 
-import Navbar from "./Navbar"
+import NavBarMenu from "./Navbar"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -36,7 +35,7 @@ const Layout = ({ children }) => {
   const menus = data.carports.menuses
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div
         style={{
           margin: `0 auto`,
@@ -45,7 +44,7 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <Navbar menu={menus} />
+        <NavBarMenu menu={menus} />
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
