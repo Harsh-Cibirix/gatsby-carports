@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import SiteLayout from "../components/layout"
+import SiteLayout from "../components/siteLayout"
 import SEO from "../components/seo"
 
 const SecondPage = () => (
