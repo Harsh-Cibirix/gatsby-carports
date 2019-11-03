@@ -1,7 +1,7 @@
 {
-  "name": "Carport Template",
+  "name": "carport-template",
   "private": true,
-  "description": "Building the Carport Template",
+  "description": "Building a Carport Template",
   "version": "0.1.0",
   "author": "Harsh",
   "dependencies": {
