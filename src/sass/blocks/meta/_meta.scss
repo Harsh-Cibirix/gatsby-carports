@@ -1,0 +1,28 @@
+.meta {
+    @include flex(row, center, flex-start);
+    & span {
+        font-size: 12px;
+        color: $text-color-lighter;
+        @include font-weight('medium');
+        font-style: italic;
+        margin-right: 20px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: $text-color-lighter;
+            border-radius: 5px;
+            top: 50%;
+            left: calc(100% + 10px);
+            margin-top: -2px;
+        }
+        &:last-child {
+            margin-right: 0;
+            &::after {
+                content: none;
+            }
+        }
+    }
+}

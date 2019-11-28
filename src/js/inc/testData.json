@@ -1,0 +1,18 @@
+[{
+    "id": 1,
+    "name": "Single Carport",
+    "img": "../img/buildings-img-1.jpg",
+    "img2x": "img/buildings-img-1@2x.jpg"
+},
+{
+    "id": 2,
+    "name": "Double Carport",
+    "img": "img/buildings-img-2.jpg",
+    "img2x": "img/buildings-img-2@2x.jpg"
+},
+{
+    "id": 3,
+    "name": "Triple Wide Carport",
+    "img": "img/buildings-img-3.jpg",
+    "img2x": "img/buildings-img-3@2x.jpg"
+}]

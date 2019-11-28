@@ -1,0 +1,71 @@
+.newsletter{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -50px;
+    &__grid{
+        @include flex( row, center, flex-start );
+        background: $white-color;
+        box-shadow: 0 15px 35px 0 rgba( $black-color, .2 );
+        border-radius: 10px;
+        padding: 40px 50px;
+    }
+    &__form{
+        @include flex( row, stretch, flex-start );
+        width: 450px;
+        flex-shrink: 0;
+        padding-left: 40px;
+        &-input{
+            flex: 1 1 auto;
+            font-size: 18px;
+            color: $black-color;
+            &::-webkit-input-placeholder {
+                font-size: 18px;
+                font-style: italic;
+                color: $text-color-lighter;
+            }
+            &::-moz-placeholder {
+                font-size: 18px;
+                font-style: italic;
+                color: $text-color-lighter;
+            }
+            &:-moz-placeholder {
+                font-size: 18px;
+                font-style: italic;
+                color: $text-color-lighter;
+            }
+            &:-ms-input-placeholder {
+                font-size: 18px;
+                font-style: italic;
+                color: $text-color-lighter;   
+            }
+            &:focus::-webkit-input-placeholder {
+                color: transparent;
+            }
+            &:focus::-moz-placeholder {
+                color: transparent;
+            }
+            &:focus:-moz-placeholder {
+                color: transparent;
+            }
+            &:focus::-ms-input-placeholder {
+                color: transparent;
+            }
+        }
+        &-btn{
+            width: 40px;
+            height: 40px;
+            @include flex( row, center, center );
+            flex-shrink: 0;
+        }
+    }
+    &__note{
+        flex: 1 1 auto;
+        padding-right: 30px;
+        margin: 0;
+        font-size: 22px;
+        color: $secondary-color-lighter;
+        line-height: 1.4;
+        border-right: 1px solid rgba( $black-color, .1 );
+    }
+}

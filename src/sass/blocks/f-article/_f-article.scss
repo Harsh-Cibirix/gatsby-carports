@@ -1,0 +1,24 @@
+.f-article{
+    @include flex( row, center, flex-start );
+    text-decoration: none;
+    &__img{
+        max-width: 110px;
+        flex-shrink: 0;
+    }
+    &__info{
+        padding-left: 15px;
+    }
+    &__name{
+        margin: 0;
+        @include font-weight( 'bold' );
+        line-height: 1.42;
+    }
+    &__date{
+        margin: 0;
+        font-size: 14px;
+        margin-top: 3px;
+        @include font-weight( 'bold' );
+        font-style: italic;
+        color: $text-color-lighter;
+    }
+}

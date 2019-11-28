@@ -1,0 +1,26 @@
+.blog-template{
+    &__btn{
+        position: absolute;
+        width: 100%;
+        max-width: 300px;
+        padding: 17px 15px;
+        font-size: 18px;
+        left: 50%;
+        margin-left: -150px;
+        bottom: -25px;
+        z-index: 1;
+    }
+    &__grid{
+        padding: 160px 0;
+        padding-top: 80px;
+        &-btn{
+            margin-top: 10px;
+        }
+    }
+    &__item{
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

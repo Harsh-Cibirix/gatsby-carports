@@ -1,0 +1,24 @@
+.tag{
+    display: inline-block;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: $text-color;
+    @include font-weight( 'medium' );
+    border: 1px solid darken( $secondary-color-lightest, 3% );
+    border-radius: 20px;
+    & span{
+        display: inline-block;
+        font-size: 12px;
+        padding: 6px 8px;
+        padding-bottom: 4px;
+        @include font-weight( 'bold' );
+        background: $light-color-lighter;
+        border-radius: 100px;
+        flex-shrink: 0;
+        margin-left: 5px;
+    }
+    &[href]:hover{
+        border-color: darken( $secondary-color-lightest, 10% );
+    }
+}

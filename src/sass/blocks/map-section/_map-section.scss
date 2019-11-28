@@ -1,0 +1,13 @@
+.map-section{
+    padding-bottom: 140px;
+    &__title{
+        max-width: 475px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        &_width{
+            &-m{
+                max-width: 545px;
+            }
+        }
+    }
+}

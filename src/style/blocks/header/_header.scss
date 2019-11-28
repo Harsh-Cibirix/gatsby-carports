@@ -1,0 +1,44 @@
+.header{
+    background: $white-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 15px 35px 0 rgba( $black-color, .15 );
+    &__logo{
+        padding: 15px 0;
+    }
+    &__options{
+        @include flex( row, stretch, flex-end );
+    }
+    &__phone-btn{
+        @include flex( row, center, center );
+        padding: 10px 30px;
+        text-decoration: none;
+        font-size: 20px;
+        color: $white-color;
+        background: $primary-color;
+        border-radius: 50px;
+        box-shadow: 0 8px 25px 0 rgba( $primary-color, .35 );
+        & svg{
+            margin-right: 5px;
+        }
+        // &:hover{
+        //     background: darken( $primary-color, 5% );
+        // }
+    }
+    &__choice{
+        margin-right: 10px;
+    }
+    &__bottom{
+        @include flex( row, stretch, flex-start );
+    }
+    &__search{
+        width: 360px;
+        flex-shrink: 0;
+    }
+    &__menu{
+        flex: 1 1 auto;
+    }
+}

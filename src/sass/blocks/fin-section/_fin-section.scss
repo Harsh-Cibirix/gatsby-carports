@@ -1,0 +1,10 @@
+.fin-section{
+    background: $secondary-color-lightest;
+    padding: 115px 0;
+    &__title{
+        margin-bottom: 35px;;
+    }
+    &__grid{
+        @include flex( row, center, center );
+    }
+}

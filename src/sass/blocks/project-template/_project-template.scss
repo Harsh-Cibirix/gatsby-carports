@@ -1,0 +1,19 @@
+.project-template{
+    &__desc{
+        max-width: 650px;
+        margin-bottom: 25px;
+    }
+    &__item{
+        margin-bottom: 30px;
+    }
+    &__btn{
+        margin-top: 10px;
+    }
+    &__section{
+        border-bottom: 1px solid $light-color;
+        padding: 60px 0;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+}

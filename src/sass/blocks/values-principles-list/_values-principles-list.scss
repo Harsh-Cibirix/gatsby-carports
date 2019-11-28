@@ -1,0 +1,37 @@
+.values-principles-list{
+    @include flex( row, flex-start, center );
+    &__title{
+        color: $secondary-color;
+        margin: 0;
+        @include font-weight( 'bold' );
+        padding: 0 30px;
+        padding-bottom: 15px;
+    }
+    &__value{
+        margin: 0;
+        font-size: 20px;
+        @include font-weight( 'bold' );
+        padding: 15px 30px;
+        border-top: 1px dashed rgba( $secondary-color, .4 );
+    }
+    &__number{
+        margin: 0;
+        font-size: 35px;
+        @include font-weight( 'bold' );
+        color: rgba( $secondary-color, .4 );
+        padding: 0 30px;
+        margin-bottom: 14px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__col{
+        &:first-child{
+            text-align: right;
+        }
+        &:nth-child(2){
+            align-self: flex-end;
+            padding-bottom: 6px;
+        }
+    }
+}

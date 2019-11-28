@@ -1,0 +1,17 @@
+.search{
+    background: darken( $secondary-color, 5% );
+    &__form{
+        @include flex( row, stretch, flex-start );
+        height: 100%;
+    }
+    &__input{
+        flex: 1 1 auto;
+        padding: 0 30px;
+        line-height: 1.57;
+        font-size: 14px;
+    }
+    &__btn{
+        width: 70px;
+        flex-shrink: 0;
+    }
+}

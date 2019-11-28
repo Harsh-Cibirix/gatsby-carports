@@ -1,0 +1,21 @@
+.social{
+    @include flex( row, center, flex-start );
+    &__link{
+        @include flex( row, center, center );
+        width: 45px;
+        height: 45px;
+        border: 1px solid rgba( $white-color, .2 );
+        border-radius: 50%;
+        margin-right: 5px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            & svg{
+                & path, g{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

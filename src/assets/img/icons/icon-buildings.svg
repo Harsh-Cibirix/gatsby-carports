@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="Group_555" data-name="Group 555" transform="translate(-295 429.616)">
+    <g id="Ellipse_63" data-name="Ellipse 63" transform="translate(295 -429.616)" fill="#274180" stroke="rgba(255,255,255,0.06)" stroke-width="10">
+      <circle cx="60" cy="60" r="60" stroke="none"/>
+      <circle cx="60" cy="60" r="55" fill="none"/>
+    </g>
+    <path id="Union_2" data-name="Union 2" d="M48,39.235V13.5H12V39.235H9V13.5H0L29.975,0,60,13.5H51V39.235Z" transform="translate(325 -388.616)" fill="#fff"/>
+    <path id="Union_10" data-name="Union 10" d="M-954.5-323H-965v-9h12v9Zm0-1.5v-2h-9v2Zm0-3.5v-2.5h-9v2.5Z" transform="translate(1307 -39.616)" fill="#fff"/>
+    <path id="Union_11" data-name="Union 11" d="M-954.5-323H-965v-9h12v9Zm0-1.5v-2h-9v2Zm0-3.5v-2.5h-9v2.5Z" transform="translate(1321 -39.616)" fill="#fff"/>
+    <path id="Union_12" data-name="Union 12" d="M-954.5-323H-965v-9h12v9Zm0-1.5v-2h-9v2Zm0-3.5v-2.5h-9v2.5Z" transform="translate(1307 -28.616)" fill="#fff"/>
+    <path id="Union_13" data-name="Union 13" d="M-954.5-323H-965v-9h12v9Zm0-1.5v-2h-9v2Zm0-3.5v-2.5h-9v2.5Z" transform="translate(1321 -28.616)" fill="#fff"/>
+  </g>
+</svg>

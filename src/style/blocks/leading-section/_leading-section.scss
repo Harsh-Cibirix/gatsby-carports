@@ -1,0 +1,42 @@
+.leading-section{
+    background: image('leading-section-bg@2x.jpg') no-repeat 50%;
+    background-size: cover;
+    &__title{
+        max-width: 480px;
+    }
+    &__btn{
+        margin-top: 65px;
+    }
+    &__grid{
+        margin-top: 40px;
+        @include flex( row, stretch, flex-start );
+        flex-wrap: wrap;
+    }
+    &__item{
+        @include flex( column, center, flex-start );
+        width: 33.333%;
+        padding: 45px;
+        border-right: 1px dashed $third-color;
+        border-bottom: 1px dashed $third-color;
+        &:nth-child(3n){
+            border-right: none;
+        }
+        &:nth-last-child(1){
+            border-bottom: none;
+        }
+        &:nth-last-child(2){
+            border-bottom: none;
+        }
+        &:nth-last-child(3){
+            border-bottom: none;
+        }
+        &-name{
+            text-align: center;
+            margin: 0;
+            @include font-weight( 'bold' );
+            color: $white-color;
+            margin-top: 15px;
+            line-height: 1.4;
+        }
+    }
+}

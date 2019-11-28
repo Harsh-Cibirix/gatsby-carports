@@ -1,0 +1,15 @@
+.contact-template{
+    background: $light-color;
+    &__header{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+    &__grid{
+        padding: 100px 0;
+        padding-top: 80px;
+    }
+    &__item{
+        height: 100%;
+    }
+}

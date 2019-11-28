@@ -1,0 +1,23 @@
+.label{
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
+    @include font-weight( 'bold' );
+    color: $white-color;
+    padding: 0 10px;
+    height: 20px;
+    background: $primary-color;
+    border-radius: 30px;
+    line-height: 20px;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 40px;
+        top: 100%;
+        left: 50%;
+        margin-left: -.5px;
+        background: $primary-color;
+    }
+}

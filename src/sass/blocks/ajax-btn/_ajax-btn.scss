@@ -1,0 +1,27 @@
+.ajax-btn{
+    @include flex( row, center, center );
+    height: 65px;
+    font-size: 16px;
+    @include font-weight( 'bold' );
+    color: $text-color-lighter;
+    background: $secondary-color-lightest;
+    padding: 0 50px;
+    position: relative;
+    margin: 0 auto;
+    & svg{
+        position: absolute;
+        top: 50%;
+        margin-top: -19px;
+        left: 45px;
+        opacity: 0;
+    }
+    &_is-loading{
+        padding-left: 85px;
+        & svg{
+            opacity: 1;
+        }
+    }
+    &:hover{
+        background: darken( $secondary-color-lightest, 1% );
+    }
+}

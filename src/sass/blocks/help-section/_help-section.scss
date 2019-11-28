@@ -1,0 +1,43 @@
+.help-section{
+    padding: 130px 0;
+    background: darken( $white-color, 5% ) image('pattern.svg') repeat-x 50%;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba( $secondary-color-lightest, .95 );
+    }
+    &__container{
+        position: relative;
+        z-index: 1;
+    }
+    &__info{
+        margin-top: 35px;
+        @include flex( row, center, center );
+        &-item{
+            @include flex( row, center, flex-start );
+            margin-right: 75px;
+            @include font-weight( 'medium' );
+            color: $text-color;
+            text-decoration: none;
+            & svg{
+                margin-right: 15px;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    &__form{
+        margin-top: 45px;
+    }
+}

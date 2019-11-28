@@ -1,0 +1,7 @@
+.contact-section{
+    background: $secondary-color image('plane.svg') no-repeat -200px 45px;
+    padding-bottom: 0;
+    &__form{
+        margin-top: 50px;
+    }
+}

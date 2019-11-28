@@ -1,0 +1,14 @@
+.footer{
+    background: $black-color;
+    &__top{
+        padding: 115px 0;
+        padding-bottom: 70px;
+    }
+    &__bottom{
+        padding: 20px 0;
+        background: $dark-color;
+    }
+    &__copyright{
+        text-align: right;
+    }
+}

@@ -1,0 +1,63 @@
+.contact-form{
+    padding-bottom: 120px;
+    position: relative;
+    &__col{
+        max-width: 50%;
+        flex: 1 1 auto;
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &_width{
+            &-full{
+                max-width: 100%;
+                margin: 0;
+            }
+        }
+    }
+    &__group{
+        margin-bottom: 40px;
+    }
+    &__input{
+        height: 45px;
+        color: $white-color;
+        border-bottom-color: rgba( $white-color, .1 );
+        &_active{
+            border-bottom-color: rgba( $white-color, .5 );
+        }
+    }
+    &__textarea{
+        height: 80px;
+    }
+    &__select{
+        height: 45px;
+        border-bottom-color: rgba( $white-color, .1 );
+        &_active{
+            border-bottom-color: rgba( $white-color, .5 );
+        }
+        & select{
+            color: $white-color;
+        }
+    }
+    &__label{
+        font-size: 16px;
+        color: rgba( $white-color, .5 );
+        &.form{
+            &__label{
+                &_active{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    &__btn{
+        font-size: 18px;
+        width: 100%;
+        padding: 17px 15px;
+        max-width: 300px;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        margin-left: -150px;
+    }
+}

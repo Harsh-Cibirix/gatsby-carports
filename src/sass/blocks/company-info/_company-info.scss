@@ -1,0 +1,42 @@
+.company-info{
+    &__title{
+        margin: 0;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: $white-color;
+        @include font-weight( 'black' );
+    }
+    &__text{
+        @include flex( row, center, flex-start );
+        margin: 0;
+        margin-top: 20px;
+        font-size: 14px;
+        color: $white-color;
+        @include font-weight( 'medium' );
+        & svg{
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+    }
+    &-link{
+        &__value{
+            color: $white-color;
+            text-decoration: none;
+            display: inline;
+            border-bottom: 1px solid $white-color;
+        }
+    }
+    &__address{
+        padding-left: 3px;
+        max-width: 205px;
+        line-height: 1.4;
+    }
+    &__phone{
+        &-value{
+            color: $primary-color;
+            @include font-weight( 'bold' );
+            font-size: 20px;
+            border: none;
+        }
+    }
+}

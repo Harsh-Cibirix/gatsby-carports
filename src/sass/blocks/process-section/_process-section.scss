@@ -1,0 +1,15 @@
+.process-section{
+    padding: 130px 0;
+    padding-bottom: 300px;
+    background: $secondary-color-lightest;
+    &__title{
+        max-width: 360px;
+    }
+    &__desc{
+        color: $black-color;
+        max-width: 610px;
+    }
+    &__grid{
+        margin-top: 200px;
+    }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
+import { Navbar, Nav} from "react-bootstrap"
 
 class NavBarMenu extends Component {
   constructor(props) {
@@ -50,9 +50,10 @@ class NavBarMenu extends Component {
                       {item.menuName}
                     </Nav.Link>
                   </Link>
-                )
+                );
               }
-            })}
+              return null;
+            })};
           </Nav>
           {/* <Nav className="ml-auto">
             <Form inline onSubmit={e => e.preventDefault()}>

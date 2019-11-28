@@ -1,0 +1,17 @@
+.rto-fin-template{
+    &__grid{
+        background: $light-color-lighter;
+        padding: 90px 0;
+        padding-bottom: 140px;
+    }
+    &__desc{
+        color: $text-color;
+    }
+    &__list{
+        @include flex( row, center, center );
+        margin-top: 30px;
+    }
+    &__text{
+        padding-bottom: 180px;
+    }
+}

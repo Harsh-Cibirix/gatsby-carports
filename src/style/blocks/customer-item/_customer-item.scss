@@ -1,0 +1,58 @@
+.customer-item{
+    position: absolute;
+    width: 100%;
+    max-width: 640px;
+    top: 50%;
+    transform: translateY( -50% );
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 15px 45px 0 rgba( $black-color, .15 );
+    background: $white-color;
+    border-radius: 10px;
+    padding: 65px;
+    padding-left: 90px;
+    &__text{
+        margin: 0;
+        color: $text-color;
+        font-size: 20px;
+        @include font-weight( 'medium' );
+        font-style: italic;
+        line-height: 1.4;
+        position: relative;
+        &::before{
+            content: '“';
+            position: absolute;
+            top: -15px;
+            right: calc( 100% + 20px );
+            color: $third-color;
+            font-size: 60px;
+        }
+    }
+    &__author{
+        margin-top: 20px;
+        position: relative;
+        padding-left: 65px;
+        &-img{
+            position: absolute;
+            max-width: 50px;
+            max-height: 50px;
+            top: 50%;
+            left: 0;
+            transform: translateY( -50% );
+        }
+        &-name{
+            margin: 0;
+            font-size: 18px;
+            @include font-weight( 'bold' );
+            font-style: italic;
+        }
+        &-position{
+            margin: 0;
+            font-size: 14px;
+            font-style: italic;
+            @include font-weight( 'medium' );
+            color: $text-color;
+            margin-top: 3px;
+        }
+    }
+}

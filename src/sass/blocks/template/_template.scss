@@ -1,0 +1,20 @@
+.template{
+    &__title{
+        margin: 0;
+        text-align: center;
+        @include font-weight( 'bold' );
+        font-size: 32px;
+    }
+    &__desc{
+        margin-top: 15px;
+        & p{
+            margin: 0;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            text-align: center;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

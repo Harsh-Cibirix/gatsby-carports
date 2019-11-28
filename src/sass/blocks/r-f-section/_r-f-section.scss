@@ -1,0 +1,15 @@
+.r-f-section{
+    padding: 120px 0;
+    background: $secondary-color-lightest;
+    &__title{
+        max-width: 100%;
+    }
+    &__desc{
+        max-width: 650px;
+    }
+    &__grid{
+        margin-top: 50px;
+        @include flex( row, flex-start, space-between );
+        position: relative;
+    }
+}

@@ -1,0 +1,20 @@
+.location-section{
+    &__map{
+        margin-top: 60px;
+    }
+    &__list{
+        margin-top: 40px;
+    }
+    &__col{
+        padding-top: 75px;
+        padding-bottom: 75px;
+        // box-shadow: 0 0 0 1px $light-color;
+        border: 1px solid $light-color;
+        @include flex( row, center, center );
+        margin-right: -1px;
+        margin-bottom: -1px;
+        &:nth-child(even){
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.process{
+    @include flex( row, center, center );
+    &__point{
+        width: 28px;
+        height: 28px;
+        &:first-child{
+            margin-right: 3px;
+        }
+        &:last-child{
+            margin-left: 3px;
+        }
+    }
+    &__line{
+        width: 80px;
+        flex-shrink: 0;
+        height: 4px;
+        background: rgba( $secondary-color, .1 );
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $primary-color;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        &:nth-child(2){
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            &::after{
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+        }
+        &:nth-last-child(2){
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            &::after{
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+        }
+        &_active{
+            background: $primary-color;
+        }
+        &_fill{
+            &-full{
+                &::after{
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+            &-30{
+                &::after{
+                    width: 30%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &__item{
+        @include flex( column, center, flex-start );
+        position: relative;
+        &-circle{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            padding: 8px;
+            background: $secondary-color-lightest;
+            border: 4px solid rgba( $secondary-color, .1 );
+            position: relative;
+            z-index: 2;
+            &_active{
+                width: 145px;
+                height: 145px;
+                border-color: $primary-color;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: 20px;
+                border: 1px dashed rgba( $secondary-color, .1 );
+                bottom: calc( 100% + 4px );
+                left: 50%;
+                margin-left: -1px;
+            }
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &:nth-child(4n+5){
+            & .process{
+                &__item{
+                    &-circle{
+                        &::before{
+                            bottom: auto;
+                            top: calc( 100% + 4px );
+                        }
+                    }
+                }
+            }
+        }
+        &-name{
+            position: absolute;
+            margin: 0;
+            font-size: 24px;
+            @include font-weight( 'bold' );
+            color: $secondary-color;
+            line-height: 1.2;
+            width: 160px;
+            text-align: center;
+            bottom: calc( 100% + 30px );
+            left: 50%;
+            margin-left: -80px;
+            &_position{
+                &-bottom{
+                    bottom: auto;
+                    top: calc( 100% + 30px );
+                }
+            }
+        }
+    }
+}

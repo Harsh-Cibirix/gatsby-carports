@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.401" height="11.109" viewBox="0 0 12.401 11.109">
+  <g id="home" transform="translate(0.201 -27.586)">
+    <g id="Group_299" data-name="Group 299" transform="translate(-0.001 27.798)">
+      <g id="Group_298" data-name="Group 298" transform="translate(0 0)">
+        <path id="Path_915" data-name="Path 915" d="M11.872,32.022,6.184,27.858a.312.312,0,0,0-.368,0L.127,32.022a.312.312,0,0,0,.368.5L6,28.5l5.5,4.03a.312.312,0,0,0,.368-.5Z" transform="translate(0.001 -27.798)" fill="#999" stroke="#999" stroke-width="0.4"/>
+      </g>
+    </g>
+    <g id="Group_301" data-name="Group 301" transform="translate(1.323 32.596)">
+      <g id="Group_300" data-name="Group 300" transform="translate(0 0)">
+        <path id="Path_916" data-name="Path 916" d="M65.494,232.543a.312.312,0,0,0-.312.312v4.963H62.688v-2.709a1.559,1.559,0,0,0-3.118,0v2.709H57.076v-4.963a.312.312,0,0,0-.624,0v5.275a.312.312,0,0,0,.312.312h3.118a.312.312,0,0,0,.311-.287.235.235,0,0,0,0-.024v-3.021a.935.935,0,0,1,1.871,0v3.021a.227.227,0,0,0,0,.024.312.312,0,0,0,.311.288h3.118a.312.312,0,0,0,.312-.312v-5.275A.312.312,0,0,0,65.494,232.543Z" transform="translate(-56.452 -232.543)" fill="#999" stroke="#999" stroke-width="0.4"/>
+      </g>
+    </g>
+  </g>
+</svg>

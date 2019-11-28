@@ -1,0 +1,27 @@
+.request-form{
+    background: $white-color;
+    border: 1px solid $light-color;
+    border-radius: 5px;
+    padding: 70px;
+    &__row{
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__input{
+        height: 45px;
+    }
+    &__textarea{
+        height: 90px;
+    }
+    &__select{
+        height: 50px;
+    }
+    &__btn{
+        padding: 17px 15px;
+        width: 100%;
+        font-size: 18px;
+    }
+}

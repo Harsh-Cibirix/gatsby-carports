@@ -1,0 +1,13 @@
+.k-centre-template{
+    &__btn{
+        position: absolute;
+        width: 100%;
+        max-width: 300px;
+        padding: 17px 15px;
+        font-size: 18px;
+        left: 50%;
+        margin-left: -150px;
+        bottom: -25px;
+        z-index: 1;
+    }
+}

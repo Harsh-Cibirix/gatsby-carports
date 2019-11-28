@@ -1,0 +1,26 @@
+.rto-template{
+    &__link{
+        padding: 0;
+        background: rgba( $black-color, .15 );
+        &-text{
+            width: 60%;
+            padding: 20px 40px;
+        }
+        &-phone{
+            @include flex( row, center, center );
+            width: 40%;
+            border-left: 1px solid rgba( $white-color, .1 );
+            align-self: stretch;
+            margin: 0;
+            font-size: 24px;
+            @include font-weight( 'bold' );
+            color: $white-color;
+            & svg{
+                margin-right: 10px;
+            }
+        }
+    }
+    &__text{
+        padding-bottom: 240px;
+    }
+}

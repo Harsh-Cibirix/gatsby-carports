@@ -1,0 +1,15 @@
+.btn{
+    display: block;
+    color: $white-color;
+    @include font-weight( 'bold' );
+    background: $primary-color;
+    box-shadow: 0 12px 35px 0 rgba( $primary-color, .25 );
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 14px;
+    &_size-l{
+        padding: 15px 50px;
+    }
+}

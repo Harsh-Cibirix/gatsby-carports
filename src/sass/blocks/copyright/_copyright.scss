@@ -1,0 +1,6 @@
+.copyright{
+    margin: 0;
+    font-size: 14px;
+    @include font-weight( 'medium' );
+    color: rgba( $text-color-lighter, .9 );
+}

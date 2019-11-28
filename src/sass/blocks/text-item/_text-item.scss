@@ -1,0 +1,12 @@
+.text-item{
+    &__title{
+        font-size: 22px;
+        @include font-weight( 'bold' );
+        margin-bottom: 10px;
+    }
+    &__value{
+        margin: 0;
+        line-height: 1.4;
+        color: $text-color;
+    }
+}

@@ -1,0 +1,46 @@
+.dropdown-menu{
+    padding: 45px 0;
+    width: 350px;
+    list-style: none;
+    margin: 0;
+    background: $secondary-color-darker;
+    &__item{
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__link{
+        padding: 0 45px;
+        color: rgba( $white-color, .5 );
+        font-size: 18px;
+        @include font-weight( 'bold' );
+        text-decoration: none;
+        width: 100%;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 40px;
+            background: $primary-color;
+            left: 0;
+            top: 50%;
+            margin-top: -20px;
+            transform: scale3d( 0, 0, 0 );
+            transition: transform .55s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+        &:hover{
+            color: $white-color;
+            &::before{
+                transform: scale3d( 1, 1, 0 );
+            }
+        }
+        &_active{
+            color: $white-color;
+            &::before{
+                transform: scale3d( 1, 1, 0 );
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.sidebar-section{
+    &__title{
+        margin: 0;
+        font-size: 24px;
+        @include font-weight( 'bold' );
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,33 @@
+.choice{
+    @include flex( row, center, flex-start );
+    border: 1px solid $secondary-color-lighter;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px 0 rgba( $secondary-color, .1 );
+    &__link{
+        @include flex( row, center, center );
+        text-decoration: none;
+        font-size: 14px;
+        color: $secondary-color;
+        @include font-weight( 'bold' );
+        padding: 10px 25px;
+        position: relative;
+        & svg{
+            margin-right: 5px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: calc( 100% + 10px );
+            top: 50%;
+            transform: translateY( -50% );
+            left: 100%;
+            background: $secondary-color-lighter;
+        }
+        &:last-child{
+            &::after{
+                content: none;
+            }
+        }
+    }
+}

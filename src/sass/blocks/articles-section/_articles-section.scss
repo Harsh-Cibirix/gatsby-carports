@@ -1,0 +1,19 @@
+.articles-section{
+    position: relative;
+    background: $secondary-color-lightest;
+    &__col{
+        &:nth-child(4n+2){
+            top: 20px;
+        }
+        &:nth-child(4n+3){
+            top: 20px;
+        }
+    }
+    &__title{
+        max-width: 1020px;
+        margin-bottom: 5px;
+    }
+    &__btn{
+        margin-top: 70px;
+    }
+}

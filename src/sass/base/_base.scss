@@ -1,0 +1,138 @@
+    // -----------------------------------------------------------------------------
+    // This file contains very basic styles.
+    // -----------------------------------------------------------------------------
+    /**
+ * Set up a decent box model on the root element
+ */
+
+    html {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; // height: 100%;
+        font-size: $base-font-size;
+    }
+    /**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    a {
+        display: inline-block;
+        color: $black-color;
+    }
+
+    p {
+        font-size: $base-font-size;
+        color: $black-color;
+    }
+
+    b, strong {
+        @include font-weight('bold');
+    }
+
+    body {
+        @include font();
+        @include font-weight('normal');
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; // height: 100%;
+        color: $black-color;
+        font-size: $base-font-size;
+        background: $white-color;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    button {
+        @include font();
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        outline-style: none;
+        outline-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    select {
+        @extend button;
+    }
+
+    input {
+        @extend button;
+        cursor: text;
+        color: $white-color;
+        @include font();
+    }
+
+    textarea {
+        @extend button;
+        cursor: text;
+        resize: none;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+     ::-webkit-input-placeholder {
+        font-size: 14px;
+        color: rgba( $white-color, .6 );
+    }
+
+     ::-moz-placeholder {
+        font-size: 14px;
+        color: rgba( $white-color, .6 );
+        opacity: 1;
+    }
+
+     :-moz-placeholder {
+        font-size: 14px;
+        color: rgba( $white-color, .6 );
+        opacity: 1;
+    }
+
+     :-ms-input-placeholder {
+        font-size: 14px;
+        color: rgba( $white-color, .6 );
+    }
+
+     :focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+     :focus::-moz-placeholder {
+        color: transparent;
+    }
+
+     :focus:-moz-placeholder {
+        color: transparent;
+    }
+
+     :focus::-ms-input-placeholder {
+        color: transparent;
+    }
+

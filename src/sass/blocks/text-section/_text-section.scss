@@ -1,0 +1,8 @@
+.text-section{
+    &__item{
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

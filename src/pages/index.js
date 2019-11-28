@@ -2,19 +2,28 @@ import React from "react"
 import { Link } from "gatsby"
 
 import SiteLayout from "../components/siteLayout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
+import MainHero from "../components/MainHero"
+import Usp from "../components/Usp"
+import Principles from "../components/Principles"
+import ReviewSlider from "../components/ReviewSlider"
+import FeaturedBlogs from "../components/FeaturedBlogs"
+import LocationMap from "../components/LocationMap"
 
 const IndexPage = () => (
   <SiteLayout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
+    <MainHero />
+    {/* <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <p>Now go build something great.</p> */}
+    <Usp />
+    <Principles />
+    <ReviewSlider />
+    <FeaturedBlogs />
+    <LocationMap />
+    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </SiteLayout>
 )
 

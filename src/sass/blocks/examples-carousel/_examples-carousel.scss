@@ -1,0 +1,41 @@
+.examples-carousel{
+    &__item{
+        max-width: 740px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba( $white-color, .6 );
+            top: 0;
+            left: 0;
+            transition: opacity .55s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+        &_active{
+            &::before{
+                opacity: 0;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 14px solid rgba( $white-color, .15 );
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    &__img{
+        transform: perspective(3d);
+    }
+    &__arrow{
+        &-prev{
+            left: 15%;
+        }
+        &-next{
+            right: 15%;
+        }
+    }
+}

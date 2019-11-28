@@ -1,0 +1,27 @@
+.footer-menu{
+    @include flex( row, flex-start, flex-end );
+    &__col{
+        @include flex( column, flex-start, flex-start );
+        margin-right: 135px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &-name{
+            margin: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $white-color;
+            @include font-weight( 'bold' );
+        }
+    }
+    &__link{
+        text-decoration: none;
+        font-size: 14px;
+        color: $text-color-lighter;
+        @include font-weight( 'medium' );
+        margin-top: 20px;
+        &:hover{
+            color: $white-color;
+        }
+    }
+}

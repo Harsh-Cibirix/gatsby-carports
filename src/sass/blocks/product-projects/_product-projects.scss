@@ -1,0 +1,19 @@
+.product-projects{
+    padding: 70px 0;
+    padding-top: 65px;
+    &__title{
+        margin-bottom: 40px;
+    }
+    &__form{
+        @include flex( row, center, center );
+        margin-bottom: 40px;
+    }
+    &__list{
+        &-col{
+            margin-bottom: 30px;
+        }
+    }
+    &__btn{
+        margin-top: 10px;
+    }
+}

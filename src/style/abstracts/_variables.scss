@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+//Font
+$font: 'Roboto';
+$base-font-size: 16px;
+//Url
+$base-path: '../';
+//Colors
+$white-color: #fff;
+$black-color: #222222;
+$primary-color: #DA3F42;
+$secondary-color: #274180;
+$secondary-color-lighter: #42588F;
+$secondary-color-lightest: #D7DFF4;
+$third-color: #FECC01;
+$text-color: #666666;
+$text-color-lighter: #999999;
+$light-color: #F8F8F8;
+//Font weight
+$font-weight: (
+    'normal': normal,
+    'light': 300,
+    'medium': 500,
+    'bold': bold,
+    'black': 900
+);

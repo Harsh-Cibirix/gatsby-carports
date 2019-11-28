@@ -1,0 +1,28 @@
+.contact-item{
+    @include flex( column, flex-start, flex-start );
+    background: $white-color;
+    box-shadow: 0 12px 35px 0 rgba( $black-color, .2 );
+    padding: 80px 60px;
+    &__value{
+        @include flex( row, center, flex-start );
+        text-decoration: none;
+        margin-top: 25px;
+        font-size: 16px;
+        color: $text-color;
+        @include font-weight( 'medium' );
+        & svg{
+            flex-shrink: 0;
+            margin-right: 25px;
+        }
+    }
+    &__name{
+        margin: 0;
+        font-size: 22px;
+        @include font-weight( 'bold' );
+    }
+    &__link{
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}

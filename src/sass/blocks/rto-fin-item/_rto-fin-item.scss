@@ -1,0 +1,58 @@
+.rto-fin-item{
+    position: relative;
+    width: 460px;
+    padding: 65px 50px;
+    padding-bottom: 90px;
+    background: $white-color;
+    box-shadow: 0 12px 35px 0 rgba( $black-color, .12 );
+    &_size{
+        &-l{
+            width: 520px;
+            box-shadow: 0 12px 65px 0 rgba( $black-color, .12 );
+            padding: 80px;
+            padding-bottom: 120px;
+            z-index: 1;
+        }
+    }
+    &__btn{
+        font-size: 18px;
+        width: 100%;
+        max-width: 300px;
+        padding: 17px 50px;
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        margin-left: -150px;
+    }
+    &__img{
+        margin: 0 auto;
+    }
+    &__content{
+        margin-top: 45px;
+        & ul, ol{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            & li{
+                color: rgba( $black-color, .8 );
+                margin-bottom: 15px;
+                padding-left: 15px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    background: $third-color;
+                    border-radius: 1px;
+                    top: 5px;
+                    left: 0;
+                    transform: rotate(45deg);
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

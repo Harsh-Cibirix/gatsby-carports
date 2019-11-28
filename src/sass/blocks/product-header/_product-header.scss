@@ -1,0 +1,10 @@
+.product-header{
+    padding: 55px 0;
+    padding-top: 75px;
+    border-bottom: 1px solid $light-color;
+    &__desc{
+        & p{
+            color: $text-color;
+        }
+    }
+}

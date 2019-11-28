@@ -1,0 +1,36 @@
+.similar-item{
+    box-shadow: 0 12px 35px 0 rgba( $black-color, .12 );
+    position: relative;
+    @include flex( row, stretch, center );
+    background: $white-color;
+    &__section{
+        width: 50%;
+        flex: 1 1 auto;
+    }
+    &__info{
+        padding: 55px 30px;
+        padding-left: 0;
+        padding-bottom: 85px;
+        & ul, ol{
+            & li{
+                &::before{
+                    left: -3px;
+                }
+            }
+        }
+    }
+    &__icon{
+        background: $light-color-lighter;
+        @include flex( row, center, center );
+    }
+    &__btn{
+        position: absolute;
+        padding: 17px 15px;
+        font-size: 18px;
+        bottom: -25px;
+        width: 100%;
+        max-width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+}

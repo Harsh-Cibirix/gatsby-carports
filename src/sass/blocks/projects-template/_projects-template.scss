@@ -1,0 +1,29 @@
+.projects-template{
+    &__grid{
+        padding: 60px 0;
+        padding-bottom: 50px;
+    }
+    &__row{
+        @include flex( row, stretch, flex-start );
+        margin-bottom: 5px;
+    }
+    &__col{
+        width: 35%;
+        margin-right: 5px;
+        flex-shrink: 0;
+        &:last-child{
+            margin-right: 0;
+        }
+        &_size{
+            &-l{
+                flex: 1 1 auto;
+            }
+        }
+    }
+    &__item{
+        display: block;
+    }
+    &__btn{
+        margin-top: 45px;
+    }
+}

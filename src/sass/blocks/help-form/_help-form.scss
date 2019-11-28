@@ -1,0 +1,50 @@
+.help-form{
+    padding: 45px;
+    background: $secondary-color-lightest;
+    border: 1px solid darken( $secondary-color-lightest, 5% );
+    border-radius: 5px;
+    @include flex( row, stretch, flex-end );
+    &__btn{
+        width: 140px;
+        flex-shrink: 0;
+    }
+    &__col{
+        flex: 1 1 auto;
+        max-width: calc( ( 100% - 140px - 80px ) / 4 );
+        margin-right: 20px;
+    }
+    &__input{
+        border-bottom: 1px solid darken( $secondary-color-lightest, 5% );
+        height: 100%;
+        color: $secondary-color-lighter;
+        &.form{
+            &__input{
+                &_active{
+                    border-color: darken( $secondary-color-lightest, 10% );
+                }
+            }
+        }
+    }
+    &__select{
+        border-bottom: 1px solid darken( $secondary-color-lightest, 5% );
+        height: 100%;
+        &.form{
+            &__select{
+                &_active{
+                    border-color: darken( $secondary-color-lightest, 10% );
+                }
+            }
+        }
+        & select{
+            color: $secondary-color-lighter;
+        }
+    }
+    &__label{
+        color: rgba( $secondary-color-lighter, .6 );
+        transform: translate3d( 0, 15px, 0 );
+        &.form__label_active{
+            transform: translate3d( 0, -3px, 0 );
+            color: rgba( $secondary-color-lighter, .4 );
+        }
+    }
+}

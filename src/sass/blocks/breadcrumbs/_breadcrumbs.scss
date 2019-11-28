@@ -1,0 +1,42 @@
+.breadcrumbs{
+    position: absolute;
+    top: 170px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    &__home{
+        @include flex( row, center, center );
+        width: 12px;
+        height: 11px;
+        position: relative;
+        top: -1px;
+        &:hover{
+            & svg{
+                & path{
+                    fill: $white-color;
+                }
+            }
+        }
+    }
+    &__grid{
+        @include flex( row, center, flex-start );
+    }
+    &__separator{
+        margin: 0 10px;
+    }
+    &__link{
+        font-size: 11px;
+        @include font-weight( 'medium' );
+        text-decoration: none;
+        color: $text-color-lighter;
+        position: relative;
+        top: .5px;
+    }
+    &__current{
+        color: $text-color;
+        font-size: 11px;
+        @include font-weight( 'medium' );
+        position: relative;
+        top: 1px;
+    }
+}

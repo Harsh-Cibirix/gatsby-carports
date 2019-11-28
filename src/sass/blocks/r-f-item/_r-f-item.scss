@@ -1,0 +1,44 @@
+.r-f-item{
+    width: 480px;
+    flex-shrink: 0;
+    &:nth-child(3n+2){
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        margin-left: -240px;
+        z-index: 1;
+    }
+    &__img{
+        display: block;
+        border: 10px solid $white-color;
+        position: relative;
+    }
+    &__content{
+        padding: 30px 50px;
+        padding-bottom: 0;
+    }
+    &__note{
+        margin: 0;
+        font-size: 12px;
+        @include font-weight( 'medium' );
+        color: rgba( $text-color, .6 );
+    }
+    &__name{
+        margin: 0;
+        font-size: 22px;
+        @include font-weight( 'bold' );
+        text-decoration: none;
+    }
+    &__desc{
+        margin: 0;
+        line-height: 1.4;
+        color: $text-color;
+        margin-top: 10px;
+    }
+    &__label{
+        position: absolute;
+        bottom: 40px;
+        left: 50px;
+        z-index: 1;
+    }
+}
